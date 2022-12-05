@@ -1,0 +1,51 @@
+@media (max-width: 620px){
+    div#about-container{
+        overflow: hidden;
+        display: block;
+        height: auto;
+        padding-bottom: 2vh;
+        background-color: black;
+    }
+
+    #about-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    img#profile-pic{
+        width: 70%;
+        height: auto;
+        border-radius: 2%;
+        padding-bottom: 10vh;
+    }
+
+    p#about-description{
+        margin-top: -15vh;
+    }
+
+    .cards .card1:hover p.description1{
+        padding-top: 72vh;
+    }
+
+    .cards .card2:hover p.description2{
+        padding-top: 61vh;
+    }
+
+    .cards .card3:hover p.description3{
+        padding-top: 52vh;
+    }
+
+    .cards .card4:hover p.description4{
+        padding-top: 34vh;
+    }
+
+    .cards .card5:hover p.description5{
+        padding-top: 22vh;
+    }
+
+    .cards .card6:hover p.description6{
+        padding-top: 10vh;
+    }
+
+}
