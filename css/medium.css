@@ -108,7 +108,6 @@
         margin-bottom: 20vh;
     }
 
-
     div#about-container h2{
         padding-top: 9vh;
         font-family: 'Source Code Pro', monospace;
@@ -138,4 +137,56 @@
     footer #social{
         font-size: 14px;
     }   
+
+
+    /*ativação das pseudoclasses active*/
+    .cards .card1:active p.description1,
+    .cards .card2:active p.description2,
+    .cards .card3:active p.description3,
+    .cards .card4:active p.description4,
+    .cards .card5:active p.description5,
+    .cards .card6:active p.description6{ 
+        visibility: visible;
+        display: flex;
+    }
+
+    div.skills-content:active p.estatic-text{
+        visibility: hidden;
+    }
+
+    .cards .card1:active p.estatic-text{
+        opacity: 0;
+    }
+
+    #footer-icons:active, .fa-solid.fa-comments:active, .fa-solid.fa-people-group:active, .fa-solid.fa-pen-clip:active{
+        color:rgb(153, 107, 195);
+        transition:0.2s;
+        cursor: pointer;
+    }
+
+    .card1 .fa-html5:active{
+        color: rgb(215, 102, 61);
+        cursor: pointer;
+    }
+
+    .card2 .fa-css3:active{
+        color: rgb(44, 44, 175);
+        cursor: pointer;
+    }
+
+    .card3 .fa-js:active{
+        color: rgb(231, 231, 104);
+        cursor: pointer;
+    }
+
+    #soon:active{
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        cursor: pointer;
+        transition:0.2s;
+    }
+
+    .square:active .overlay {
+        opacity: 70%;
+    }
 }
