@@ -10,7 +10,7 @@ img.brand{
     margin-left: -380px;
 }
 
-*{/*arrumar identação*/
+*{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -285,25 +285,9 @@ div#skills-container{
     visibility: hidden;
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
-.cards .card1:hover p.description1,
-.cards .card2:hover p.description2,
-.cards .card3:hover p.description3,
-.cards .card4:hover p.description4,
-.cards .card5:hover p.description5,
-.cards .card6:hover p.description6{ 
-    visibility: visible;
-    display: flex;
-}
-
-div.skills-content:hover p.estatic-text{
-    visibility: hidden;
-}
-
-.cards .card1:hover p.estatic-text{
-    opacity: 0;
-}
 
 .skills-content > .cards {
     line-height: 18px;
@@ -335,27 +319,6 @@ div.skills-content:hover p.estatic-text{
 .fa-solid.fa-comments, .fa-solid.fa-people-group, .fa-solid.fa-pen-clip,
 .card1 .fa-html5, .card2 .fa-css3, .card3 .fa-js{
     color:rgb(255, 255, 255);
-}
-
-#footer-icons:hover, .fa-solid.fa-comments:hover, .fa-solid.fa-people-group:hover, .fa-solid.fa-pen-clip:hover{
-    color:rgb(153, 107, 195);
-    transition:0.2s;
-    cursor: pointer;
-}
-
-.card1 .fa-html5:hover{
-    color: rgb(215, 102, 61);
-    cursor: pointer;
-}
-
-.card2 .fa-css3:hover{
-    color: rgb(44, 44, 175);
-    cursor: pointer;
-}
-
-.card3 .fa-js:hover{
-    color: rgb(231, 231, 104);
-    cursor: pointer;
 }
 
 .square{
@@ -391,13 +354,6 @@ div.skills-content:hover p.estatic-text{
     color: white;
     padding-left: 100px;
     vertical-align: center;
-}
-
-#soon:hover{
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    cursor: pointer;
-    transition:0.2s;
 }
 
 /*Galeria*/
@@ -447,10 +403,6 @@ div#gallery-content > div {
     font-family: 'Courier New', Courier, monospace;
     line-height: 180px;
     transition:0.3s;
-}
-
-.square:hover .overlay {
-    opacity: 70%;
 }
 
 @keyframes botao {
@@ -506,4 +458,57 @@ p#year{
     font-size: 3vh;
     text-align: center;
     display:block;
+}
+
+/*validação hover*/
+@media (hover: hover){
+    .cards .card1:hover p.description1,
+    .cards .card2:hover p.description2,
+    .cards .card3:hover p.description3,
+    .cards .card4:hover p.description4,
+    .cards .card5:hover p.description5,
+    .cards .card6:hover p.description6{ 
+        visibility: visible;
+        display: flex;
+    }
+
+    div.skills-content:hover p.estatic-text{
+        visibility: hidden;
+    }
+
+    .cards .card1:hover p.estatic-text{
+        opacity: 0;
+    }
+
+    #footer-icons:hover, .fa-solid.fa-comments:hover, .fa-solid.fa-people-group:hover, .fa-solid.fa-pen-clip:hover{
+        color:rgb(153, 107, 195);
+        transition:0.2s;
+        cursor: pointer;
+    }
+
+    .card1 .fa-html5:hover{
+        color: rgb(215, 102, 61);
+        cursor: pointer;
+    }
+
+    .card2 .fa-css3:hover{
+        color: rgb(44, 44, 175);
+        cursor: pointer;
+    }
+
+    .card3 .fa-js:hover{
+        color: rgb(231, 231, 104);
+        cursor: pointer;
+    }
+
+    #soon:hover{
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        cursor: pointer;
+        transition:0.2s;
+    }
+
+    .square:hover .overlay {
+        opacity: 70%;
+    }
 }
