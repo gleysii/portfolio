@@ -1,0 +1,514 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/*menu*/
+img.brand{
+    position: relative;
+    padding-bottom: 5px;
+    height: 50px;
+    margin-left: -380px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-nav{
+    padding: 3px 3px 8px 17px;
+    height: 50px;
+    right: 5px;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: space-between;
+    vertical-align: center;
+}
+  
+ul{
+    height: auto;
+    display: flex;
+    vertical-align: center;
+    margin-top: 12px;
+    margin-right: 70px;
+}
+  
+ul li{
+    margin-left: 50px;
+    list-style-type: none;
+  
+}
+  
+ul li a{
+    color: #ffff;
+    height: auto;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: -5px;
+    letter-spacing: 2px;
+}
+  
+ul li a:hover{
+    color: plum;
+    transition: 0.3s;
+    letter-spacing: 3px;
+}
+  
+img#profile-pic{
+    display: flex;
+}
+
+/*Início*/
+div#home-container{
+    overflow: hidden;
+    display: block;
+    background-color: white;
+    height: 100vh;
+}
+
+div#home-container h2{
+    padding-top: 10vh;
+    padding-left: 4vw;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    font-size: 5vh;
+    letter-spacing: 1vh;
+}
+
+/*título do site*/
+#home-container .line{
+    display: flex;
+    width: 28.5vw;
+    margin-top: 20vh;
+    margin-left: 4vw;
+    font-size: 8vh;
+    font-family: 'Source Code Pro', monospace;
+    font-style: bold;
+    border-right: 0.3vh solid rgba(14, 14, 14, 0.75);
+    white-space: nowrap; /*para não quebrar as linhas*/
+    overflow: hidden;
+}
+
+#home-container a button.btn-back{
+    background-color: black;
+    font-size: 28px;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
+    right: 25px;
+    color:white;
+    border: 2px solid rgb(153, 107, 195);
+    border-radius: 10%;
+    transition: 0.2s;
+}
+
+#home-container a button.btn-back:hover{
+   cursor: pointer;
+   background-color: #ffff;
+}
+
+#home-container a button.btn-back:hover{
+    color: black;
+}
+
+container button.btn-back a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+#home-container button.btn-back a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+/*animação máquina de escrever*/
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 33vw;
+    }
+}
+
+.typing-animation{
+    animation: blinkCursor 600ms infinite normal, typing 4s steps(40) 1s normal;/*o steps é para quebrar a animação quadro a quadro*/
+}                                                                               /*dando o estilo de máquina de escrever*/
+
+@keyframes blinkCursor{
+    from{
+        border-right-color: rgba(14, 14, 14, 0.75);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+#about-container h1, #skills-container h1, #gallery-container h1{
+    width: 72vw;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    font-size: 8vh;
+    font-family: 'Source Code Pro', monospace;
+    border-bottom: 2px solid rgb(153, 107, 195);
+}
+
+/*títulos gerais*/
+hr{
+    color:black;
+}
+
+#skills-container h2{
+    padding-right: 60vw;
+    color:black;
+}
+
+#diagonal{
+    margin-bottom: 200px;
+    opacity: 90%;
+    width: 130%;
+    height: 180%;
+    transform: rotate(-27deg);
+    background-color: rgb(153, 107, 195);
+}
+
+img#ilustra{
+    position: absolute;
+    top: 15vh;
+    left: 60vw;
+    height: 500px;
+    width: auto;
+    animation-name: move;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes move{
+    10%  {top:120px;}
+    100% {bottom: 0px;}
+}
+
+/*Sobre*/
+div#about-container{
+    overflow: hidden;
+    display: block;
+    height: auto;
+    padding-bottom: 20vh;
+    background-color: black;
+}
+
+div#about-container h2{
+    font-family: 'Source Code Pro', monospace;
+    color:white;
+    font-size: 3.5vh;
+    text-align: justify;
+    margin: 10vw 15vh;   
+    padding: 20vh ;
+}
+
+#about-content{
+    display: flex;
+    align-items: center;
+    margin-top:-50px;
+    display: flex; 
+    height: auto;
+}
+
+#about-description{
+    margin-top: 1vh;
+    padding: 10vh 8vw 10vh 8vw;
+    font-size: 2.5vh;
+    text-align: justify;   
+    font-family: 'Source Code Pro';
+    color: white;
+    word-spacing: 1px;
+    font-weight: lighter;
+}
+
+h1{
+    word-spacing: -10px;
+}
+
+#about-container img{
+    margin-left: 100px;
+    border-radius: 50%;
+    height: 50vh;
+    width: auto;
+    margin-top: 15vh;
+}
+
+div#about-container h1, div#gallery-container h1{
+    color: white;
+}
+
+/*Skills*/
+div#skills-container{
+    overflow: hidden;
+    display: flex;
+    display: block;
+    background-color: white;
+    height: auto;
+    margin-bottom: 40vh;
+}
+
+.skills-content{
+    width: auto;
+    height: auto;
+    margin: 15vh 20vw 0 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+
+.estatic-text{
+    padding-top: 5vh;
+    color: #c4c4c4;
+    font-size: 18pt;
+}
+
+.cards .card1 p.description1,
+.cards .card2 p.description2,
+.cards .card3 p.description3,
+.cards .card4 p.description4,
+.cards .card5 p.description5,
+.cards .card6 p.description6{
+    position: absolute;
+    width:95%;
+    top:auto;
+    padding-top: 6vh;
+    right: 5px;
+    font-size: 18pt;
+    margin-top: 5vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.skills-content > .cards {
+    line-height: 18px;
+    margin: 20px;
+    justify-items: center;
+}
+
+.cards{
+    display: flex;
+    text-align: center;
+}
+
+.cards .card1,
+.cards .card2,
+.cards .card3,
+.cards .card4,
+.cards .card5,
+.cards .card6 {
+    font-size: 40pt;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10%;
+    padding-top: 15px;
+    margin: 10px 40px 0 0;
+    box-shadow: 5px 5px 15px #aaaaaa;
+}
+
+.fa-solid.fa-comments, .fa-solid.fa-people-group, .fa-solid.fa-pen-clip,
+.card1 .fa-html5, .card2 .fa-css3, .card3 .fa-js{
+    color:rgb(255, 255, 255);
+}
+
+.square{
+    background-color: faixargb(255, 255, 255);
+    border: 1px solid rgb(153, 107, 195);
+    background-color: white;
+    border-radius: 1vw;
+    width: 240px;
+    height: 180px;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 2vh;
+}
+
+.faixa{
+   margin-bottom: 100px;
+   margin-left: -50px;
+   margin-top: 40px;
+   padding-top: 10px;
+   width: 400px;
+   height: 50px;
+   background-color: rgb(153, 107, 195);
+   transform: rotate(-27deg);
+}
+
+.square, .faixa{
+   cursor: pointer;
+}
+
+#soon{
+    padding-top: 10px;
+    font-size: 28px;
+    color: white;
+    padding-left: 100px;
+    vertical-align: center;
+}
+
+/*Galeria*/
+div#gallery-container{
+    background-color: black;
+    padding-bottom: 20vh;
+    display: block;
+    height: auto;
+}
+
+div#gallery-content{
+    width: auto;
+    margin-left: 10%;
+    margin-right: 12%;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div#gallery-content > div {
+    line-height: 18px;
+    margin: 20px
+}
+
+.nalao{
+    display: absolute;
+    width: 160%;
+    height: auto;
+    z-index: 1;
+    margin-left: -90px;
+}
+
+.overlay{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: #ffff;
+    opacity: 0;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 180px;
+    transition:0.3s;
+}
+
+@keyframes botao {
+    0%{
+        transform: scale(1);
+    }
+    
+    100%{
+        transform: scale(1.05)
+    }
+}
+/*footer*/
+footer{
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    height:8vh;
+    background-color: white;
+    letter-spacing: 0.2vw;
+}
+
+#footer-icons{
+    padding-top: 2vh;
+    font-size: 6vh;
+    color:black;
+    padding-bottom: 4vh;
+} 
+
+/*footer*/
+p#social{
+    font-size: 2vh;
+    margin-top: 5vh;
+}
+
+p#credits{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+p#year{
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+#bia{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(153, 107, 195);
+}
+
+#gleysi{
+    margin-top: 1vh;
+    font-size: 3vh;
+    text-align: center;
+    display:block;
+}
+
+/*validação hover*/
+@media (hover: hover){
+    .cards .card1:hover p.description1,
+    .cards .card2:hover p.description2,
+    .cards .card3:hover p.description3,
+    .cards .card4:hover p.description4,
+    .cards .card5:hover p.description5,
+    .cards .card6:hover p.description6{ 
+        visibility: visible;
+        display: flex;
+    }
+
+    div.skills-content:hover p.estatic-text{
+        visibility: hidden;
+    }
+
+    .cards .card1:hover p.estatic-text{
+        opacity: 0;
+    }
+
+    #footer-icons:hover, .fa-solid.fa-comments:hover, .fa-solid.fa-people-group:hover, .fa-solid.fa-pen-clip:hover{
+        color:rgb(153, 107, 195);
+        transition:0.2s;
+        cursor: pointer;
+    }
+
+    .card1 .fa-html5:hover{
+        color: rgb(215, 102, 61);
+        cursor: pointer;
+    }
+
+    .card2 .fa-css3:hover{
+        color: rgb(44, 44, 175);
+        cursor: pointer;
+    }
+
+    .card3 .fa-js:hover{
+        color: rgb(231, 231, 104);
+        cursor: pointer;
+    }
+
+    #soon:hover{
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        cursor: pointer;
+        transition:0.2s;
+    }
+
+    .square:hover .overlay {
+        opacity: 70%;
+    }
+}
