@@ -138,22 +138,7 @@
         font-size: 14px;
     }   
 
-
-    /*ativação das pseudoclasses active*/
-    .cards .card1:active p.description1,
-    .cards .card2:active p.description2,
-    .cards .card3:active p.description3,
-    .cards .card4:active p.description4,
-    .cards .card5:active p.description5,
-    .cards .card6:active p.description6{ 
-        visibility: visible;
-        display: flex;
-    }
-
-    div.skills-content:active p.estatic-text{
-        visibility: hidden;
-    }
-
+    
     .cards .card1:active p.estatic-text{
         opacity: 0;
     }
