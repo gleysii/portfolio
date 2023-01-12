@@ -26,16 +26,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;   
-  }
-
-  .cards .card1 p.description1,
-  .cards .card2 p.description2{
-    padding-top: 80vh;
-  }
-
-  .cards .card3 p.description3,
-  .cards .card4 p.description4{
-    padding-top: 20vh;
-  }
-        
+  }   
 }
