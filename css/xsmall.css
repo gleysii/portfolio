@@ -23,29 +23,5 @@
     p#about-description{
         margin-top: -15vh;
     }
-
-    .cards .card1:click p.description1{
-        padding-top: 72vh;
-    }
-
-    .cards .card2:hover p.description2{
-        padding-top: 61vh;
-    }
-
-    .cards .card3:hover p.description3{
-        padding-top: 52vh;
-    }
-
-    .cards .card4:hover p.description4{
-        padding-top: 34vh;
-    }
-
-    .cards .card5:hover p.description5{
-        padding-top: 22vh;
-    }
-
-    .cards .card6:hover p.description6{
-        padding-top: 10vh;
-    }
-
 }
+
