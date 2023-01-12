@@ -113,7 +113,7 @@ div#home-container h2{
     color: black;
 }
 
-container button.btn-back a{
+button.btn-back a{
     text-decoration: none;
     color: #f2f2f2;
 }
@@ -245,6 +245,16 @@ div#about-container h1, div#gallery-container h1{
 }
 
 /*Skills*/
+.cards .card1 p.description.description1,
+.cards .card2 p.description.description2,
+.cards .card3 p.description.description3,
+.cards .card4 p.description.description4,
+.cards .card5 p.description.description5,
+.cards .card6 p.description.description6{ 
+ visibility: hidden;
+ display: flex;
+}
+
 div#skills-container{
     overflow: hidden;
     display: flex;
@@ -263,31 +273,11 @@ div#skills-container{
     justify-content: space-around;   
 }
 
-.estatic-text{
+.dinamic-text{/*mudar seletor*/
     padding-top: 5vh;
     color: #c4c4c4;
     font-size: 18pt;
 }
-
-.cards .card1 p.description1,
-.cards .card2 p.description2,
-.cards .card3 p.description3,
-.cards .card4 p.description4,
-.cards .card5 p.description5,
-.cards .card6 p.description6{
-    position: absolute;
-    width:95%;
-    top:auto;
-    padding-top: 6vh;
-    right: 5px;
-    font-size: 18pt;
-    margin-top: 5vh;
-    visibility: hidden;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-
 
 .skills-content > .cards {
     line-height: 18px;
@@ -462,24 +452,6 @@ p#year{
 
 /*validação hover*/
 @media (hover: hover){
-    .cards .card1:hover p.description1,
-    .cards .card2:hover p.description2,
-    .cards .card3:hover p.description3,
-    .cards .card4:hover p.description4,
-    .cards .card5:hover p.description5,
-    .cards .card6:hover p.description6{ 
-        visibility: visible;
-        display: flex;
-    }
-
-    div.skills-content:hover p.estatic-text{
-        visibility: hidden;
-    }
-
-    .cards .card1:hover p.estatic-text{
-        opacity: 0;
-    }
-
     #footer-icons:hover, .fa-solid.fa-comments:hover, .fa-solid.fa-people-group:hover, .fa-solid.fa-pen-clip:hover{
         color:rgb(153, 107, 195);
         transition:0.2s;
