@@ -273,7 +273,7 @@ div#skills-container{
     justify-content: space-around;   
 }
 
-.dinamic-text{/*mudar seletor*/
+.dynamic-text{/*mudar seletor*/
     padding-top: 5vh;
     color: #c4c4c4;
     font-size: 18pt;
