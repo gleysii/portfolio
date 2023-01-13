@@ -1,26 +1,30 @@
-@media (max-width: 620px){
-  div#about-container{
-      overflow: hidden;
-      display: block;
-      height: auto;
-      padding-bottom: 2vh;
-      background-color: black;
-  }
+@media only screen and (max-width: 768px){
 
-  #about-content{
+    div#home-container h2{
+      font-size: 3vh;
+    }
+  
+    /*about*/
+    p#about-description{
+      margin-top: -8vh;
+    }
+    
+    /*skills*/
+    .skills-content{
+      width: auto;
+      height: auto;
+      margin: 15vh 20vw 0 20vw;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-  }
-
-  img#profile-pic{
-      width: 70%;
+      justify-content: space-around;   
+    }
+  
+    .skills-content > div{
+      width: auto;
       height: auto;
-      border-radius: 2%;
-      padding-bottom: 10vh;
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;   
+    }   
   }
-
-  p#about-description{
-      margin-top: -15vh;
-  }
-}
