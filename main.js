@@ -1,7 +1,7 @@
 //selecionando 
 const cardList = document.querySelectorAll('.card');//nodeList
 const descriptionList = document.querySelectorAll('.description');//nodeList
-const field = document.querySelector('.dinamic-text');
+const field = document.querySelector('.dynamic-text');
 
 for(let i = 0; i < cardList.length; i++){
     //elementos recebem seus índices individualmente
