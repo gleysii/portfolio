@@ -17,5 +17,7 @@ for(let i = 0; i < cardList.length; i++){
     card.onclick = function(){
         showDescription(description);
     }
+    
 }
+
 
