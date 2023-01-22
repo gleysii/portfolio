@@ -8,15 +8,9 @@ for(let i = 0; i < cardList.length; i++){
     const card = cardList[i];
     const description = descriptionList[i]; 
 
-    //a função
-    function showDescription(){
+    card.addEventListener("click", () => {
         field.innerHTML = description.innerHTML;
-    }
- 
-    //colocando função anonima - que chama outra função dentro - num evento de click
-    card.onclick = function(){
-        showDescription(description);
-    }
+    });
     
 }
 
