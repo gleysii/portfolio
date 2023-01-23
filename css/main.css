@@ -245,12 +245,12 @@ div#about-container h1, div#gallery-container h1{
 }
 
 /*Skills*/
-.cards .card1 p.description.description1,
-.cards .card2 p.description.description2,
-.cards .card3 p.description.description3,
-.cards .card4 p.description.description4,
-.cards .card5 p.description.description5,
-.cards .card6 p.description.description6{ 
+.cards .card p.description,
+.cards .card p.description,
+.cards .card p.description,
+.cards .card p.description,
+.cards .card p.description,
+.cards .card p.description{ 
  visibility: hidden;
  display: flex;
 }
@@ -290,12 +290,12 @@ div#skills-container{
     text-align: center;
 }
 
-.cards .card1,
-.cards .card2,
-.cards .card3,
-.cards .card4,
-.cards .card5,
-.cards .card6 {
+.cards .card,
+.cards .card,
+.cards .card,
+.cards .card,
+.cards .card,
+.cards .card {
     font-size: 40pt;
     width: 80px;
     height: 80px;
@@ -307,7 +307,7 @@ div#skills-container{
 }
 
 .fa-solid.fa-comments, .fa-solid.fa-people-group, .fa-solid.fa-pen-clip,
-.card1 .fa-html5, .card2 .fa-css3, .card3 .fa-js{
+.card .fa-html5, .card .fa-css3, .card .fa-js, .card .fa-sass{
     color:rgb(255, 255, 255);
 }
 
@@ -459,17 +459,22 @@ p#year{
         cursor: pointer;
     }
 
-    .card1 .fa-html5:hover{
+    .card .fa-html5:hover{
         color: rgb(215, 102, 61);
         cursor: pointer;
     }
 
-    .card2 .fa-css3:hover{
+    .card .fa-sass:hover{
+        color:#C66393;
+        cursor:pointer;
+    }
+
+    .card .fa-css3:hover{
         color: rgb(44, 44, 175);
         cursor: pointer;
     }
 
-    .card3 .fa-js:hover{
+    .card .fa-js:hover{
         color: rgb(231, 231, 104);
         cursor: pointer;
     }
