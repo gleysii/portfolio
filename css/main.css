@@ -380,6 +380,7 @@ div#gallery-content > div {
 }
 
 .overlay{
+    text-transform: uppercase;
     position: absolute;
     width: inherit;
     height: inherit;
@@ -479,8 +480,8 @@ p#year{
         cursor: pointer;
         transition:0.2s;
     }
-
+    /* 
     .square:hover .overlay {
         opacity: 70%;
-    }
+    } */
 }
