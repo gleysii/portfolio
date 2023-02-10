@@ -37,7 +37,6 @@ ul{
 ul li{
     margin-left: 50px;
     list-style-type: none;
-  
 }
   
 ul li a{
@@ -68,6 +67,8 @@ div#home-container{
 }
 
 div#home-container h2{
+    position: relative;
+    z-index: 1;
     padding-top: 10vh;
     padding-left: 4vw;
     font-family: 'Poppins', sans-serif;
@@ -168,7 +169,7 @@ hr{
 #diagonal{
     margin-bottom: 200px;
     opacity: 90%;
-    width: 130%;
+    width: 137%;
     height: 180%;
     transform: rotate(-27deg);
     background-color: rgb(153, 107, 195);
