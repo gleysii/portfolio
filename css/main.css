@@ -130,7 +130,7 @@ button.btn-back a{
         width: 0;
     }
     to{
-        width: 33vw;
+        width: vw;
     }
 }
 
@@ -374,7 +374,7 @@ div#gallery-content > div {
 
 .nalao{
     display: absolute;
-    width: 160%;
+    width: 165%;
     height: auto;
     z-index: 1;
     margin-left: -90px;

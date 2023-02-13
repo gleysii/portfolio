@@ -26,8 +26,8 @@
 
     nav{
       width: 100%;  
-      padding-top: 8vh;
-      justify-content: flex-start;
+      padding-top: 6vh;
+      justify-content: center;
     }
     
     .nav-list a{
@@ -76,11 +76,11 @@
     }
 
     ul{
-        margin-top: -54px;
+        margin-top: -40px;
     }
      
     div#about-container h1, div#skills-container h1, div#gallery-container h1{
-        width: 100vw;
+        width: auto;
         font-size: 5vh;
     }
   
@@ -174,4 +174,9 @@
     /* .square:active .overlay {
         opacity: 70%;
     } */
+
+    #about-description {
+        padding: 5vh 8vw 2vh 8vw;
+        font-size: 2vh;
+    }
 }
